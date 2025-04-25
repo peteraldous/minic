@@ -6,8 +6,7 @@ This code implements a simple lexer and parser for Mini-C, a small C-like langua
 
 # Requirements
 
-**TODO**
-This parser uses sly.
+This parser uses sly. `pip` is the easiest way to install it.
 
 # Lexical specification
 
@@ -20,7 +19,7 @@ The following token types are supported:
 - Char literals (enclosed in `''`; allowable escape sequences are `\` followed by `\`, `n`, `r`, `t`, or `'`),
 - String literals (enclosed in `""`; allowable escape sequences are `\` followed by `\`, `n`, `r`, `t`, or `"`),
 - Arithmetic operators (`+`, `-`, `*`, `/`, `=`, `==`, `<`, `>`, `<=`, and `>=`),
-- Punctuation (`;`, `,`, `(, `)`, `[`, `]`, `{`, and `}`),
+- Punctuation (`;`, `,`, `(`, `)`, `[`, `]`, `{`, and `}`),
 
 # Grammar
 
@@ -67,3 +66,7 @@ There are no booleans in Mini-C. Numeric values are false if zero and true other
 There is a built-in `print` function, which any code can call. It should simply print the value to STDOUT.
 
 There are no declarations in Mini-C. Assignment creates a variable if there is none.
+
+# Errata
+
+At present, all operators print as `+`. This will be remedied soon.
