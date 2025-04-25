@@ -68,5 +68,3 @@ There is a built-in `print` function, which any code can call. It should simply 
 There are no declarations in Mini-C. Assignment creates a variable if there is none.
 
 # Errata
-
-At present, all operators print as `+`. This will be remedied soon.

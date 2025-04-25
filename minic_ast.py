@@ -56,17 +56,17 @@ class Id(Expr):
 
 
 class Op(Enum):
-    PLUS = auto
-    MINUS = auto
-    TIMES = auto
-    DIVIDE = auto
-    ASSIGN = auto
-    EQ = auto
-    NEQ = auto
-    LT = auto
-    GT = auto
-    LEQ = auto
-    GEQ = auto
+    PLUS = auto()
+    MINUS = auto()
+    TIMES = auto()
+    DIVIDE = auto()
+    ASSIGN = auto()
+    EQ = auto()
+    NEQ = auto()
+    LT = auto()
+    GT = auto()
+    LEQ = auto()
+    GEQ = auto()
 
     def __str__(self):
         match self:
