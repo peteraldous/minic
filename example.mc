@@ -16,7 +16,7 @@ int main() {
         print("case three");
     }
 
-    if (x < 2)
+    if (x == 2)
         if (x > 6)
             print("case one");
         else
